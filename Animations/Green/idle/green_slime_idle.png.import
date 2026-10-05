@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cix3hp2gogho1"
-path="res://.godot/imported/green_slime_jump_fall.png-fc8f45febf097a19e440362ccf4b2864.ctex"
+uid="uid://branpikugaa7i"
+path="res://.godot/imported/green_slime_idle.png-9a218ebb5d1fef8677ee40b7a7b48c4e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Animations/jump_fall/green_slime_jump_fall.png"
-dest_files=["res://.godot/imported/green_slime_jump_fall.png-fc8f45febf097a19e440362ccf4b2864.ctex"]
+source_file="res://Animations/Green/idle/green_slime_idle.png"
+dest_files=["res://.godot/imported/green_slime_idle.png-9a218ebb5d1fef8677ee40b7a7b48c4e.ctex"]
 
 [params]
 

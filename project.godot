@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="terrariaPet"
+config/name="terraria-pet"
 run/main_scene="uid://b77nio0e0t5wt"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"

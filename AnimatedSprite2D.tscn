@@ -1,10 +1,10 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://Animations/death/green_slime_death.png" id="1_qwgj2"]
-[ext_resource type="Texture2D" path="res://Animations/hit/green_slime_hit.png" id="2_8j5xl"]
-[ext_resource type="Texture2D" path="res://Animations/idle/green_slime_idle.png" id="3_2s86p"]
-[ext_resource type="Texture2D" path="res://Animations/jump_fall/green_slime_jump_fall.png" id="4_m8sna"]
-[ext_resource type="Texture2D" path="res://Animations/walk/green_slime_walk.png" id="5_40ved"]
+[ext_resource type="Texture2D" uid="uid://bh2lqvkg0stiw" path="res://Animations/Green/death/green_slime_death.png" id="1_qwgj2"]
+[ext_resource type="Texture2D" uid="uid://drtcxclss83ih" path="res://Animations/Green/hit/green_slime_hit.png" id="2_8j5xl"]
+[ext_resource type="Texture2D" uid="uid://branpikugaa7i" path="res://Animations/Green/idle/green_slime_idle.png" id="3_2s86p"]
+[ext_resource type="Texture2D" uid="uid://cix3hp2gogho1" path="res://Animations/Green/jump_fall/green_slime_jump_fall.png" id="4_m8sna"]
+[ext_resource type="Texture2D" uid="uid://jjrct4om5kma" path="res://Animations/Green/walk/green_slime_walk.png" id="5_40ved"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x0ka3"]
 atlas = ExtResource("1_qwgj2")

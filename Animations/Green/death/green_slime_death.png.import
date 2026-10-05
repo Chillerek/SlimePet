@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jjrct4om5kma"
-path="res://.godot/imported/green_slime_walk.png-0669fcbd1a103867c80ecedac0654150.ctex"
+uid="uid://bh2lqvkg0stiw"
+path="res://.godot/imported/green_slime_death.png-759f3a7b78da902f8f288e16397c2688.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Animations/walk/green_slime_walk.png"
-dest_files=["res://.godot/imported/green_slime_walk.png-0669fcbd1a103867c80ecedac0654150.ctex"]
+source_file="res://Animations/Green/death/green_slime_death.png"
+dest_files=["res://.godot/imported/green_slime_death.png-759f3a7b78da902f8f288e16397c2688.ctex"]
 
 [params]
 

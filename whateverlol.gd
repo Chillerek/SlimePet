@@ -1,3 +1,7 @@
+# animacja smierci sie powtarza
+# apperance menu
+#
+
 extends Node2D
 
 
@@ -5,7 +9,7 @@ var speed = 100
 var direction = Vector2(1,0)
 var screen_size = Vector2()
 var window_size = Vector2(150, 150)
-@onready var animated_sprite = $AnimatedSprite2D
+@onready var animated_sprite = $Green
 @onready var area = $Area2D
 var idle_timer = 0.0
 var is_idling = false
@@ -13,6 +17,7 @@ var is_dragging = false
 var drag_offset = Vector2()
 var afk_time = 0.0
 var afk = false
+var color = "Green"
 func  _physics_process(delta: float) -> void:
 	if is_idling:
 		idle_timer -= delta
@@ -21,7 +26,14 @@ func  _physics_process(delta: float) -> void:
 			speed = 100
 			animated_sprite.play('walk')
 		return
-	var	window_position = Vector2(DisplayServer.window_get_position())
+	if color = 'Green':
+		animated_sprite = $Green
+	elif color = 'Red':
+		animated_sprite = $Red
+	elif color = 'Black':
+		animated_sprite = $Black
+		
+	var window_position = Vector2(DisplayServer.window_get_position())
 	window_position += direction * speed * delta
 	window_position.x = clamp(window_position.x, 0, screen_size.x - window_size.x)
 	window_position.y = clamp(window_position.y, 0, screen_size.y - window_size.y)
@@ -29,7 +41,6 @@ func  _physics_process(delta: float) -> void:
 	if window_position.x <= 0 or window_position.x >= screen_size.x - window_size.x:
 		direction.x *= -1
 		animated_sprite.flip_h = !animated_sprite.flip_h
-
 		may_idle()
 	if window_position.y <= 0 or window_position.y >= screen_size.y - window_size.y:
 		direction.y *= -1
@@ -45,10 +56,21 @@ func  _physics_process(delta: float) -> void:
 func _input(event):
 	if event is InputEventKey and event.is_released():
 		afk_time = 0.0
-		direction = Vector2(1,0)
+		direction = Vector2(1,0) 	
 		direction.x *= 1
 		direction.y *= 1
-
+	if event is InputEventKey and event.keycode == KEY_1:
+		if event.pressed:
+			color = 'Green'
+			print(color)
+	elif event is InputEventKey and event.keycode == KEY_2:
+		if event.pressed:
+			color = 'Red'
+			print(color)
+	elif event is InputEventKey and event.keycode == KEY_3:
+		if event.pressed:
+			color = 'Black'
+			print(color)
 func _ready():
 	screen_size = Vector2(DisplayServer.screen_get_size())
 	animated_sprite.play('walk')
@@ -57,15 +79,20 @@ func _ready():
 	scale.y = 3
 func _process(delta):
 	afk_time += delta
-	if afk_time > 5.0:
-		animated_sprite.play('idle')
-		direction.x = 0
-		direction.y = 0
+	#if afk_time > 5.0:
+		#animated_sprite.play('idle')
+		##moonwalkuje bo mnozymy przez zero
+		#direction.x = 0
+		#direction.y = 0
+	#else:
+		#direction.x *= -1
+		#direction.y *= -1
+	#animated_sprite.flip_h = !animated_sprite.flip_h
 
 func may_idle():
 	if randf() < 0.3:
 		is_idling = true
-		idle_timer = randf_range(1.0, 3.0)
+		idle_timer = randf_range(5.0, 10.0)
 		var r = randi() % 3
 		if r == 0:
 			animated_sprite.play('idle')
@@ -86,10 +113,12 @@ func _on_area_input(_viewport, event, _shape_idx):
 			animated_sprite.play('death')
 			direction.x *= 0
 			direction.y *= 0
-			await get_tree().create_timer(1.0).timeout
+			await get_tree().create_timer(0.8).timeout
 			get_tree().quit()
 			
+
 			
+
 
 
 

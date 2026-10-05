@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh2lqvkg0stiw"
-path="res://.godot/imported/green_slime_death.png-15850c10e180e5771e5bb640b7be14d1.ctex"
+uid="uid://cix3hp2gogho1"
+path="res://.godot/imported/green_slime_jump_fall.png-7c73804ce9150b782f4ec26b9c556317.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Animations/death/green_slime_death.png"
-dest_files=["res://.godot/imported/green_slime_death.png-15850c10e180e5771e5bb640b7be14d1.ctex"]
+source_file="res://Animations/Green/jump_fall/green_slime_jump_fall.png"
+dest_files=["res://.godot/imported/green_slime_jump_fall.png-7c73804ce9150b782f4ec26b9c556317.ctex"]
 
 [params]
 

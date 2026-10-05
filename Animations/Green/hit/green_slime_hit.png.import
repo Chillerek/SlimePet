@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://branpikugaa7i"
-path="res://.godot/imported/green_slime_idle.png-4d327791eb9d1734744a5efa92b137a9.ctex"
+uid="uid://drtcxclss83ih"
+path="res://.godot/imported/green_slime_hit.png-d06a7d0b9b8cd530972d99e56287b119.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Animations/idle/green_slime_idle.png"
-dest_files=["res://.godot/imported/green_slime_idle.png-4d327791eb9d1734744a5efa92b137a9.ctex"]
+source_file="res://Animations/Green/hit/green_slime_hit.png"
+dest_files=["res://.godot/imported/green_slime_hit.png-d06a7d0b9b8cd530972d99e56287b119.ctex"]
 
 [params]
 
