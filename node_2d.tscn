@@ -147,7 +147,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_xjt7e")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"death",
 "speed": 10.0
 }, {
@@ -350,7 +350,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6uidu")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"death",
 "speed": 10.0
 }, {
@@ -369,7 +369,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"hit",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -538,22 +538,22 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d2bti")
 }, {
-"duration": 0.5,
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_ta5nu")
 }, {
-"duration": 0.5,
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_flf07")
 }, {
-"duration": 0.5,
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_k73cj")
 }, {
-"duration": 0.5,
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_rjqkl")
 }, {
-"duration": 0.5,
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_fs4d3")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"death",
 "speed": 10.0
 }, {
@@ -627,7 +627,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(34, 33.5)
+size = Vector2(35, 32.75)
 
 [node name="Scena" type="Node2D" unique_id=150162650]
 script = ExtResource("1_kdubu")
@@ -642,16 +642,16 @@ offset_bottom = 40.0
 
 [node name="Red" type="AnimatedSprite2D" parent="." unique_id=1662286428]
 sprite_frames = SubResource("SpriteFrames_kfght")
-animation = &"idle"
+animation = &"death"
 
 [node name="Blue" type="AnimatedSprite2D" parent="." unique_id=1998497200]
 sprite_frames = SubResource("SpriteFrames_wqmlh")
-animation = &"death"
+animation = &"hit"
 
 [node name="Green" type="AnimatedSprite2D" parent="." unique_id=1257783888]
 scale = Vector2(1, 0.96875)
 sprite_frames = SubResource("SpriteFrames_57qmd")
-animation = &"death"
+animation = &"jump_fall"
 speed_scale = 1.5
 
 [node name="Area2D" type="Area2D" parent="." unique_id=2102173000]
@@ -665,7 +665,7 @@ position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="Red" type="CollisionShape2D" parent="Area2D" unique_id=2000671203]
-position = Vector2(0, 1)
+position = Vector2(0.5, 1.625)
 shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=944024311]
