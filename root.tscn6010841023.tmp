@@ -1,0 +1,28 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://node_2d.tscn" id="1_pq8q7"]
+
+[sub_resource type="World3D" id="World3D_pyidc"]
+
+[node name="root" type="Window" unique_id=715954927]
+process_mode = 1
+auto_translate_mode = 1
+world_3d = SubResource("World3D_pyidc")
+transparent_bg = true
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+physics_object_picking = true
+gui_embed_subwindows = true
+positional_shadow_atlas_size = 4096
+title = "terrariaPet"
+position = Vector2i(1854, 596)
+size = Vector2i(200, 200)
+borderless = true
+always_on_top = true
+transparent = true
+min_size = Vector2i(64, 64)
+content_scale_size = Vector2i(200, 200)
+content_scale_mode = 1
+content_scale_aspect = 4
+
+[node name="Scena" parent="." unique_id=150162650 instance=ExtResource("1_pq8q7")]

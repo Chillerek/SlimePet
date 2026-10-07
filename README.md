@@ -1,0 +1,2 @@
+# SlimePet
+My desktop pet
