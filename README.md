@@ -12,8 +12,6 @@ A small slime pet made for a playground project.
 
 ### Controls
 
-- **Right Click** — pet the slime
-- **Scroll Wheel** — make it disappear
+- **Right Click & Hold** — pet the slime
+- **Scroll Wheel Click** — make it disappear
 - **Click & Hold** — hold the slime
-
-That's it. Just a little slime. 🟢
