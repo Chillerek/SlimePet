@@ -1,10 +1,19 @@
+# slimePet
 
-## slimePet
-A cool slime pet for a playground project!
-It can:
+A small slime pet made for a playground project.
 
-    Change its color (green, blue, or red)
-    You can pet it with a right click (he loves it :3)
-    With the scroll wheel, he disappears in a cool animation!
-    If you try to hold him for too long, he gets angry >:(
-    He randomly stops for a break
+### Features
+
+- Change its color between green, blue, and red
+- Right-click to pet it :3
+- Use the scroll wheel to make it disappear with an animation
+- Hold it for too long and it gets angry >:(
+- It randomly stops for a break
+
+### Controls
+
+- **Right Click** — pet the slime
+- **Scroll Wheel** — make it disappear
+- **Click & Hold** — hold the slime
+
+That's it. Just a little slime. 🟢
